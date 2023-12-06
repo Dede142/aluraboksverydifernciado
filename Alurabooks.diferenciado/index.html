@@ -10,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="styles.css">
-
-
+  
 </head>
 
 <body>
@@ -59,20 +58,13 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="img/ApacheKafka.png"
-       alt="livro sobre o apache kafka"></div>
-    <div class="swiper-slide"><img src="img/Liderança.png" 
-      alt="livro sobre o lidderança"></div>
-    <div class="swiper-slide"><img src="img/Javascript.png"
-       alt="livro sobre o Javascript"></div>
-    <div class="swiper-slide"><img src="img/Guia Front-end.png"
-       alt="livro sobre o Guia"></div>
-    <div class="swiper-slide"><img src="img/Portugol.png"
-       alt="livro sobre o Portugol"></div>
-    <div class="swiper-slide"><img src="img/Acessibilidade.png"
-       alt="livro sobre o Acessibilidade"></div>
-
-
+    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro 1"></div>
+    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro 2"></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro 3"></div>
+    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="livro 4"></div>
+    <div class="swiper-slide"><img src="img/Javascript.svg" alt="livro 5"></div>
+    <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro 6"></div>
+    ...
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -84,9 +76,15 @@
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
 </div>
-
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+});
+</script>
+    
 </body>
 
 
